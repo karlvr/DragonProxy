@@ -28,7 +28,7 @@ public class ServerConfig {
     private int udp_bind_port = 19132;
     
     @Getter @Setter
-    private String motd;
+    private String motd = "&aServer by DragonProxy";
     
     @Getter @Setter
     private String default_server = "NONE";
