@@ -144,7 +144,9 @@ public class UpstreamSession {
      */
     public void onDisconnect(String reason) {
         proxy.getLogger().info(proxy.getLang().get(Lang.CLIENT_DISCONNECTED, username, remoteAddress, reason));
-        downstream.disconnect();
+        if (downstream != null) {
+            downstream.disconnect();
+        }
         proxy.getSessionRegister().removeSession(this);
         packetProcessorScheule.cancel(true);
     }
