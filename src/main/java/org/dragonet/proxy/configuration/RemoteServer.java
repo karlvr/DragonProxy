@@ -28,6 +28,14 @@ public abstract class RemoteServer implements ConfigurationSerializable {
     @Getter
     @Setter
     private int remotePort;
+    
+    public void setRemote_addr(String remoteAddr) {
+        setRemoteAddr(remoteAddr);
+    }
+    
+    public void setRemote_port(int reportPort) {
+        setRemotePort(reportPort);
+    }
 
     @Override
     public Map<String, Object> serialize() {
