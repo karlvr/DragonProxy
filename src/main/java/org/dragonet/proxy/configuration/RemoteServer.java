@@ -14,14 +14,19 @@ package org.dragonet.proxy.configuration;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-import lombok.Getter;
+
 import org.dragonet.configuration.serialization.ConfigurationSerializable;
+
+import lombok.Getter;
+import lombok.Setter;
 
 public abstract class RemoteServer implements ConfigurationSerializable {
     @Getter
+    @Setter
     private String remoteAddr;
     
     @Getter
+    @Setter
     private int remotePort;
 
     @Override

@@ -14,40 +14,41 @@ package org.dragonet.proxy.configuration;
 
 import java.util.Map;
 import lombok.Getter;
+import lombok.Setter;
 
 public class ServerConfig {
 
-    @Getter
+    @Getter @Setter
     private String lang = "default";
     
-    @Getter
+    @Getter @Setter
     private String udp_bind_ip = "0.0.0.0";
 
-    @Getter
+    @Getter @Setter
     private int udp_bind_port = 19132;
     
-    @Getter
+    @Getter @Setter
     private String motd;
     
-    @Getter
+    @Getter @Setter
     private String default_server = "NONE";
     
-    @Getter
+    @Getter @Setter
     private Map<String, RemoteServer> remote_servers;
     
-    @Getter
+    @Getter @Setter
     private String mode = "cls";
     
-    @Getter
+    @Getter @Setter
     private String command_prefix = "/";
     
-    @Getter
+    @Getter @Setter
     private int max_players = -1;
     
-    @Getter
+    @Getter @Setter
     private boolean log_console = true;
     
-    @Getter
+    @Getter @Setter
     private int thread_pool_size;
 	
 	
