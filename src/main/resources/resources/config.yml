@@ -27,12 +27,12 @@ default_server: 'my_pc_server'
 remote_servers:
   my_pc_server:
     # Next line indicates this is a Desktop(PC/Mac) server. 
-    ==: org.dragonet.proxy.DesktopServer
+    !!org.dragonet.proxy.DesktopServer
     remote_addr: '127.0.0.1'
     remote_port: 25565
   my_pe_server:
     # Next line indicates this is a Pocket Edition server. 
-    ==: org.dragonet.proxy.PocketServer
+    !!org.dragonet.proxy.PocketServer
     remote_addr: 'your.mcpe.server.com'
     remote_port: 19132
 
