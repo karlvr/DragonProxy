@@ -10,9 +10,8 @@ lang: default
 
 # What IP and port to bind on your own computer/server. 
 # IP 0.0.0.0 means bind to all IP addresses available on your own computer/server. 
-bind: 
-  ip: '0.0.0.0'
-  port: 19132
+udp_bind_ip: '0.0.0.0'
+udp_bind_port: 19132
 
 
 # The MOTD (Message of the Day) that will be shown on the MCPE Server List
