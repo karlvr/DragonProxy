@@ -77,6 +77,9 @@ public class DragonProxy {
         //Need to initialize config before console
         try {
             config = new Yaml().loadAs(new FileInputStream("config.yml"), ServerConfig.class);
+            if (config == null) { // config is null is config.yml file is empty
+                config = new ServerConfig();
+            }
         } catch (IOException ex) {
             logger.severe("Failed to load configuration file!");
             ex.printStackTrace();
